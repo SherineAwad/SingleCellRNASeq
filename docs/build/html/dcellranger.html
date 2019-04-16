@@ -1,0 +1,167 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>D: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered &#8212; scRNASeq  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="E: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered" href="ecellranger.html" />
+    <link rel="prev" title="G: Cell Ranger based general plots before filtering" href="gCRgeneral.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="d-cell-ranger-seurat-cells-with-genes-100-are-filtered">
+<h1><strong>D: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong><a class="headerlink" href="#d-cell-ranger-seurat-cells-with-genes-100-are-filtered" title="Permalink to this headline">¶</a></h1>
+<div class="align-center figure" id="id1">
+<a class="reference internal image-reference" href="_images/dCR.before.hist.png"><img alt="Before Normalization" src="_images/dCR.before.hist.png" style="width: 500px; height: 500px;" /></a>
+<p class="caption"><span class="caption-text">Before Normalization</span></p>
+</div>
+<div class="align-center figure" id="id2">
+<a class="reference internal image-reference" href="_images/dCR.after.hist.png"><img alt="After Normalization" src="_images/dCR.after.hist.png" style="width: 500px; height: 500px;" /></a>
+<p class="caption"><span class="caption-text">After Normalization</span></p>
+</div>
+<div class="align-center figure" id="id3">
+<a class="reference internal image-reference" href="_images/dCR.dispersion.png"><img alt="Dispersion" src="_images/dCR.dispersion.png" style="width: 400px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">Dispersion</span></p>
+</div>
+<div class="align-center figure" id="id4">
+<a class="reference internal image-reference" href="_images/dCR.pca.png"><img alt="PCA for sample D" src="_images/dCR.pca.png" style="width: 600px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">PCA for sample D</span></p>
+</div>
+<div class="align-center figure" id="id5">
+<a class="reference internal image-reference" href="_images/dCR.tsne.cluster.png"><img alt="TSNE Clustering" src="_images/dCR.tsne.cluster.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">TSNE Clustering</span></p>
+</div>
+<div class="align-center figure" id="id6">
+<a class="reference internal image-reference" href="_images/dCR.heatmap1.png"><img alt="Heatmap of Sample D" src="_images/dCR.heatmap1.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">Heatmap of sample D</span></p>
+</div>
+<div class="align-center figure" id="id7">
+<a class="reference internal image-reference" href="_images/dCR.heatmap2.png"><img alt="Heatmaps of PCAs of Sample D" src="_images/dCR.heatmap2.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">Heatmaps of PCAs of sample D</span></p>
+</div>
+<div class="align-center figure" id="id8">
+<a class="reference internal image-reference" href="_images/dCR.vnplot.pca.png"><img alt="VNPlot for top PCA genes" src="_images/dCR.vnplot.pca.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">VNPlot for top PCA genes</span></p>
+</div>
+<div class="align-center figure" id="id9">
+<a class="reference internal image-reference" href="_images/dCR.featureplot.pca.png"><img alt="Feature Plot for top PCA genes" src="_images/dCR.featureplot.pca.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">Feature Plot for top PCA genes</span></p>
+</div>
+<div class="align-center figure" id="id10">
+<a class="reference internal image-reference" href="_images/dCR.vnplot.marker.png"><img alt="VNPlot for top Marker genes" src="_images/dCR.vnplot.marker.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">VNPlot for top Marker genes</span></p>
+</div>
+<div class="align-center figure" id="id11">
+<a class="reference internal image-reference" href="_images/dCR.featureplot.marker.png"><img alt="Feature Plot for top Marker genes" src="_images/dCR.featureplot.marker.png" style="width: 600px; height: 600px;" /></a>
+<p class="caption"><span class="caption-text">Feature Plot for top Marker genes</span></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">scRNASeq</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="dCRgeneral.html"><strong>D: Cell Ranger based general plots before filtering</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="eCRgeneral.html"><strong>E: Cell Ranger based general plots before filtering</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="fCRgeneral.html"><strong>F: Cell Ranger based general plots before filtering</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gCRgeneral.html"><strong>G: Cell Ranger based general plots before filtering</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>D: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ecellranger.html"><strong>E: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="fcellranger.html"><strong>F: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gcellranger.html"><strong>G: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="dcellranger1500.html"><strong>D: Cell Ranger/Seurat - Cells with genes &lt;1500 and &gt; 3500 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ecellranger1500.html"><strong>E: Cell Ranger/Seurat - Cells with genes &lt;1500 and &gt; 3500  are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="fcellranger1500.html"><strong>F: Cell Ranger/Seurat - Cells with genes &lt;1500 and &gt;3500 are filtered</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="gcellranger1500.html"><strong>G: Cell Ranger/Seurat - Cells with genes &lt;1500 and &gt;3500  are filtered</strong></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="gCRgeneral.html" title="previous chapter"><strong>G: Cell Ranger based general plots before filtering</strong></a></li>
+      <li>Next: <a href="ecellranger.html" title="next chapter"><strong>E: Cell Ranger/Seurat - Cells with genes &lt;100 are filtered</strong></a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Bioinformatics Core.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/dcellranger.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

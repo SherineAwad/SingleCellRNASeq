@@ -14,11 +14,11 @@ Welcome to scRNASeq's documentation!
    eCRgeneral.rst
    fCRgeneral.rst
    gCRgeneral.rst 
-   dcellranger.rst  
-   ecellranger.rst
-   fcellranger.rst
-   gcellranger.rst
    dcellranger1500.rst 
    ecellranger1500.rst
    fcellranger1500.rst
-   gcellranger1500.rst   
+   gcellranger1500.rst  
+   dumigeneral.rst 
+   eumigeneral.rst
+   fumigeneral.rst 
+   gumigeneral.rst  

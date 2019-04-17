@@ -18,7 +18,6 @@
 
 
 
-
 .. figure:: dCR1500.after.hist.png
     :width: 500px
     :align: center

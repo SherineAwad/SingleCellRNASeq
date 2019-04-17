@@ -3,7 +3,6 @@
 =======================================================================================================================
 
 
-#Althoug no filtering but their run from g100 is more reviewed and they are run before the filtering step
 
 .. figure:: gumi.geneswith1tr.png
    :width: 500px

@@ -3,7 +3,6 @@
 =========================================================================================================================
 
 
-#Althoug no filtering but their run from d100 is more reviewed and they are run before the filtering step 
 
 .. figure:: dumi.geneswith1tr.png
    :width: 500px

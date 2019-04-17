@@ -3,7 +3,6 @@
 =========================================================================================================================
 
 
-#Althoug no filtering but their run from e100 is more reviewed and they are run before the filtering step
 
 .. figure:: eumi.geneswith1tr.png
    :width: 500px

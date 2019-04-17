@@ -3,7 +3,6 @@
 ================================================================================================================
 
 
-#Althoug no filtering but their run from f100 is more reviewed and they are run before the filtering step
 
 
 .. figure:: fumi.geneswith1tr.png

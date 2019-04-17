@@ -172,7 +172,11 @@ g.counts.tsv.gz: g.assigned_sorted.bam
 	umi_tools count --per-gene --gene-tag=XT --assigned-status-tag=XS --per-cell --paired --wide-format-cell-counts  -I g.assigned_sorted.bam -S g.counts.tsv.gz
 
 
-
+g.counts.csv: 
+	gunzip -c d.counts.tsv.gz > d.counts.tsv 
+	gunzip -c e.counts.tsv.gz > e.counts.tsv 
+	gunzip -c f.counts.tsv.gz > f.counts.tsv 
+	gunzip -c g.counts.tsv.gz > g.counts.tsv 
 
 
 

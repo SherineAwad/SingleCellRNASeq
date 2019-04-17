@@ -21,4 +21,8 @@ Welcome to scRNASeq's documentation!
    dumigeneral.rst 
    eumigeneral.rst
    fumigeneral.rst 
-   gumigeneral.rst  
+   gumigeneral.rst 
+   dumi1700.rst 
+   eumi1700.rst
+   fumi1700.rst
+   gumi1700.rst 

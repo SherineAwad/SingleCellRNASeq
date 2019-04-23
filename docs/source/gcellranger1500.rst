@@ -74,23 +74,23 @@
  
    Heatmaps of PCAs of sample G
 
-.. figure:: gCR1500.vnplot.pca.png  
+.. figure:: gCR1500.vnplot.selected.png  
    :width: 600px
    :align: center
    :height: 600px
-   :alt: VNPlot for top PCA genes 
+   :alt: VNPlot for top selected genes 
    :figclass: align-center
   
-   VNPlot for top PCA genes 
+   VNPlot for selected genes 
 
-.. figure:: gCR1500.featureplot.pca.png
+.. figure:: gCR1500.featureplot.selected.png
    :width: 600px 
    :align: center 
    :height: 600px 
-   :alt: Feature Plot for top PCA genes 
+   :alt: Feature Plot for selected genes 
    :figclass: align-center
 
-   Feature Plot for top PCA genes 
+   Feature Plot for selected genes 
 
 .. figure:: gCR1500.vnplot.marker.png 
    :width: 600px 

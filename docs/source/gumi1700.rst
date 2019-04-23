@@ -72,19 +72,19 @@
    :width: 600px
    :align: center
    :height: 600px
-   :alt: VNPlot for top selected genes 
+   :alt: VNPlot for selected genes 
    :figclass: align-center
   
-   VNPlot for top selected genes 
+   VNPlot for selected genes 
 
 .. figure:: gumi1700.featureplot.selected.png
    :width: 600px 
    :align: center 
    :height: 600px 
-   :alt: Feature Plot for top selected genes 
+   :alt: Feature Plot for selected genes 
    :figclass: align-center
 
-   Feature Plot for top selected genes 
+   Feature Plot for selected genes 
 
 .. figure:: gumi1700.vnplot.marker.png 
    :width: 600px 

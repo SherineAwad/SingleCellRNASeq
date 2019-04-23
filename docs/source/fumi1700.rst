@@ -70,23 +70,23 @@
  
    Heatmaps of PCAs of sample F
 
-.. figure:: fumi1700.vnplot.pca.png  
+.. figure:: fumi1700.vnplot.selected.png  
    :width: 600px
    :align: center
    :height: 600px
-   :alt: VNPlot for top PCA genes 
+   :alt: VNPlot for top selected genes 
    :figclass: align-center
   
-   VNPlot for top PCA genes 
+   VNPlot for top selected genes 
 
-.. figure:: fumi1700.featureplot.pca.png
+.. figure:: fumi1700.featureplot.selected.png
    :width: 600px 
    :align: center 
    :height: 600px 
-   :alt: Feature Plot for top PCA genes 
+   :alt: Feature Plot for top selected genes 
    :figclass: align-center
 
-   Feature Plot for top PCA genes 
+   Feature Plot for top selected genes 
 
 .. figure:: fumi1700.vnplot.marker.png 
    :width: 600px 

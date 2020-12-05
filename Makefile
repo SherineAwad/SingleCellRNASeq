@@ -1,4 +1,3 @@
-CELLRANGER =/rds/project/yhbl2/rds-yhbl2-genehunter/SM/tools/cellranger-3.0.2
 WHERE = /rds/project/yhbl2/rds-yhbl2-genehunter/SM/scRNAseq
 REF = /rds/project/yhbl2/rds-yhbl2-genehunter/SM/scRNAseq/ref/refdata-cellranger-GRCh38-1.2.0
 INDEX = /rds/project/yhbl2/rds-yhbl2-genehunter/SM/hg38index
@@ -8,44 +7,12 @@ FC = /home/sa941/software/subread-1.6.3-Linux-i386/bin
 ANNOTATIONS = /rds/project/yhbl2/rds-yhbl2-genehunter/SM/annotations/Homo_sapiens/NCBI/GRCh38/Annotation/Genes
 
 
-refdata-cellranger-hg19-3.0.0.tar.gz: #this has to be via cellranger download page 
-	wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-hg19-3.0.0.tar.gz
-
-refdata-cellranger-GRCh38-3.0.0.tar.gz: 
-	wget http://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-3.0.0.tar.gz
 
 Homo_sapiens.GRCh38.93.gtf.gz: 
 	wget ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.gtf.gz
 	wget ftp://ftp.ensembl.org/pub/release-93/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 
 
-D.R2.L002.fastq.gz:
-	cat SIGAD1_S1_L002_R1_001.fastq.gz  SIGAD1_S2_L002_R1_001.fastq.gz  SIGAD1_S3_L002_R1_001.fastq.gz  SIGAD1_S4_L002_R1_001.fastq.gz > D.R1.L002.fastq.gz 
-	cat SIGAD1_S1_L002_R2_001.fastq.gz  SIGAD1_S2_L002_R2_001.fastq.gz  SIGAD1_S3_L002_R2_001.fastq.gz  SIGAD1_S4_L002_R2_001.fastq.gz > D.R2.L002.fastq.gz 
-
-E.R2.L002.fastq.gz: 
-	cat SIGAE1_S5_L002_R1_001.fastq.gz  SIGAE1_S6_L002_R1_001.fastq.gz  SIGAE1_S7_L002_R1_001.fastq.gz  SIGAE1_S8_L002_R1_001.fastq.gz > E.R1.L002.fastq.gz 
-	cat SIGAE1_S5_L002_R2_001.fastq.gz  SIGAE1_S6_L002_R2_001.fastq.gz  SIGAE1_S7_L002_R2_001.fastq.gz  SIGAE1_S8_L002_R2_001.fastq.gz > E.R2.L002.fastq.gz 
-
-F.R2.L002.fastq.gz: 
-	cat SIGAF1_S13_L002_R1_001.fastq.gz  SIGAF1_S14_L002_R1_001.fastq.gz  SIGAF1_S15_L002_R1_001.fastq.gz  SIGAF1_S16_L002_R1_001.fastq.gz > F.R1.L002.fastq.gz
-	cat SIGAF1_S13_L002_R2_001.fastq.gz  SIGAF1_S14_L002_R2_001.fastq.gz  SIGAF1_S15_L002_R2_001.fastq.gz  SIGAF1_S16_L002_R2_001.fastq.gz > F.R2.L002.fastq.gz 
-
-G.R2.L002.fastq.gz: 
-	cat SIGAG1_S9_L002_R1_001.fastq.gz SIGAG1_S10_L002_R1_001.fastq.gz  SIGAG1_S11_L002_R1_001.fastq.gz  SIGAG1_S12_L002_R1_001.fastq.gz  > G.R1.L002.fastq.gz
-	cat SIGAG1_S9_L002_R2_001.fastq.gz SIGAG1_S10_L002_R2_001.fastq.gz  SIGAG1_S11_L002_R2_001.fastq.gz  SIGAG1_S12_L002_R2_001.fastq.gz  > G.R2.L002.fastq.gz 
-
-
-#-----------------------------------CELL RANGER------------------------------------------------------------ 
-	
-Dout/outs/cloupe.cloupe: D/D_S1_L001_R1_001.fastq.gz  D/D_S1_L001_R2_001.fastq.gz 
-	${CELLRANGER}/cellranger count --id=Dout --transcriptome=${REF} --fastqs=${WHERE}/D --sample=D 
-Eout/outs/cloupe.cloupe: E/E_S1_L001_R1_001.fastq.gz  E/E_S1_L001_R2_001.fastq.gz
-	${CELLRANGER}/cellranger count --id=Eout --transcriptome=${REF} --fastqs=${WHERE}/E --sample=E
-Fout/outs/cloupe.cloupe: F/F_S1_L001_R1_001.fastq.gz  F/F_S1_L001_R2_001.fastq.gz
-	${CELLRANGER}/cellranger count --id=Fout --transcriptome=${REF} --fastqs=${WHERE}/F --sample=F
-Gout/outs/cloupe.cloupe: G/G_S1_L001_R1_001.fastq.gz  G/G_S1_L001_R2_001.fastq.gz
-	${CELLRANGER}/cellranger count --id=Gout --transcriptome=${REF} --fastqs=${WHERE}/G --sample=G
 
 #---------------------------------UMI Tools-----------------------------------------------------------------
 #-----------Sample D
